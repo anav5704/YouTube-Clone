@@ -1,11 +1,10 @@
 import axios from "axios"
 
-const URL = "https://youtube-v31.p.rapidapi.com/search"
+const URL = "https://youtube-v31.p.rapidapi.com"
 
 const options = {
    params: {
-    part: 'snippet',
-    videoId: 'M7FIvfx5J10'
+    maxResults: "25"
   },
   headers: {
     'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
@@ -21,13 +20,8 @@ try {
 }
 
 async function ftechAPI(url){
-    try{
-        const { data } = await axios.get(`${URL}/` + url, options)
-         return data
-    }
-    catch(err){
-        console.log("Fecth error", err)
-    }
+        const { data } = await axios.get(`${URL}/${url}`, options)
+        return data
 }
 
 export default ftechAPI

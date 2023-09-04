@@ -1,17 +1,23 @@
 import { useState, useEffect } from "react"
 import { Box, Stack, Typography } from "@mui/material"
-import { Sidebar, Video } from "../index"
+import { Sidebar, Videos } from "../index"
 import fetchAPI from "../utils/api"
  
 
 const Feed = () => {
 const date = new Date
 const year = date.getFullYear()
+const [active, setActive] = useState("New")
+const [videos, setVideos] = useState([])
+
+useEffect(() => {
+  fetchAPI(`search?part=snippet&q=${active}`).then(data => setVideos(data.items))
+}, [active])
  
  return (
     <Stack sx={{ flexDirection: {sx: "column", md: "row"}}}>
       <Box sx={{height: {sx:"auto", md: "90vh"}, borderRight: "2px solid red", px: {sx: 0, md:2}}}>
-          <Sidebar />
+          <Sidebar active={active} setActive={setActive}/>
          <Typography
          variant="body2"
          sx={{mt:1.5 }}
@@ -21,9 +27,9 @@ const year = date.getFullYear()
       </Box>
       <Box p={2} sx={{overflowY: "auto", height: "90vh", flex: 2}}>
         <Typography variant="h4" fontWeight={"semibold"} mb={2}>
-          New <span>vidoes</span>
+          {active} <span>vidoes</span>
         </Typography>
-        <Video video={[]}/>
+        <Videos videos={videos}/>
       </Box>
     </Stack>
   )
