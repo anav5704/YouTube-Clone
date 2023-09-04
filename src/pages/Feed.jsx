@@ -27,7 +27,7 @@ useEffect(() => {
       </Box>
       <Box p={2} sx={{overflowY: "auto", height: "90vh", flex: 2}}>
         <Typography variant="h4" fontWeight={"semibold"} mb={2}>
-          {active} <span>vidoes</span>
+          {active} <span>videos</span>
         </Typography>
         <Videos videos={videos}/>
       </Box>
