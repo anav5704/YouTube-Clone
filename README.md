@@ -4,4 +4,3 @@ Tech Stack:
 - React JS
 - Material UI 5
 - Rapid API
-- Supabase
