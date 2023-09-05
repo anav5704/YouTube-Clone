@@ -5,9 +5,9 @@ import { SearchBar } from "../index"
   
 const Navbar = () => 
   (
-    <Stack direction={"row"} alignItems={"center"} p={2} sx={{height: "10vh", position: "sticky", top: 0, justifyContent: "space-between"}}>
+    <Stack zIndex={100} direction={"row"}  alignItems={"center"} p={2} sx={{borderBottom: "2px solid #262626",background: "#18181b", height: "10vh",  position: "sticky", top: 0, justifyContent: "space-between"}}>
       <Link to="/" style={{display: "flex", alignItems: "center"}}>
-        <img src="/fav.webp" alt="YouTube logo"  style={{height: "50px"}}/>
+        <img src="/fav.webp" alt="YouTube logo"  style={{height: "60px"}}/>
        </Link>
        <SearchBar />
     </Stack>

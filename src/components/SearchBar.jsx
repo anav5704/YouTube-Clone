@@ -19,7 +19,7 @@ const SearchBar = () => {
     <Paper 
     component={"form"}
     onSubmit={(e) => {handleSumbit(e)}}
-    sx={{borderRadius: 2, px: 2, width: 200,display: "flex", justifyContent: "space-between", alignItems:"center"}}
+    sx={{overflow:"hidden", background: "#262626", borderRadius: 2, width: 350,display: "flex", justifyContent: "space-between", alignItems:"center"}}
     >
     <input 
     className="search-bar"
@@ -28,7 +28,7 @@ const SearchBar = () => {
     value={query}
     onChange={(e)=> {setQuery(e.target.value)}}
     />
-    <IconButton sx={{color: "red"}} >
+    <IconButton sx={{color: "red"}} onClick={(e) => {handleSumbit(e)}} >
         <Search />
     </IconButton>
     </Paper>

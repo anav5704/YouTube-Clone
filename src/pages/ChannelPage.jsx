@@ -15,7 +15,7 @@ const ChannelPage = () => {
      }, [id])
 
   return (
-    <Box minHeight={"95vh"} width={"100%"}>
+    <Box minHeight={"95vh"} width={"100%"}  p={2}>
         <ChannelCard channel={channel}/>
         <Videos videos={videos}/>
     </Box>

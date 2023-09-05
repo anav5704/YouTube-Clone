@@ -1,12 +1,17 @@
+*{
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #18181b;
   color: whitesmoke;
+  overflow: hidden;
 }
+
 
 a {
   text-decoration: none;
@@ -37,16 +42,17 @@ a {
   color: white !important;
 }
 
-.react-player {
-  height: 77vh !important;
-  width: 100% !important;
-}
+
 
 .search-bar{
   border:none;
   outline:none;
-  width:350px;
-}
+   background-color: #262626;
+  padding: 10px;
+  width: 100%;
+  caret-color: red;
+  color: whitesmoke;
+ }
 
 .category-btn{
   font-weight: bold !important;
@@ -60,9 +66,8 @@ a {
   border: none;
 
   padding: 7px 15px;
-  margin: 10px 0px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
+  margin-top: 20px;
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 900px) {
