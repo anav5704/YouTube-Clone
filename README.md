@@ -20,6 +20,6 @@ API_KEY
 Once that is done, run ```npm start``` to view it on localhost.
 
 ## Learning Resources
-- [YoouTube clone tutoriral](https://www.youtube.com/watch?v=FHTbsZEJspU)
+- [YouTube clone tutoriral](https://www.youtube.com/watch?v=FHTbsZEJspU)
 - [Material UI docs](https://mui.com/)
 - [Rapid API docs](https://rapidapi.com/hub)
