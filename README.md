@@ -11,7 +11,7 @@ This is a simple recreation of YouTube. It has a sidebar with various categories
 
 ## Getting Started
 
-First fork and clone the repo. First run ```npm install``` to download all the dependencies. Now, set up your environmental variables. Make a ```.env``` file in the root of your project with the following variable(this is the Rapid API key - YouTube v3):
+First fork and clone the repo. Then, run ```npm install``` to download all the dependencies. Now, set up your environmental variables. Make a ```.env``` file in the root of your project with the following variable(this is the Rapid API key - YouTube v3):
 
 ```
 API_KEY
